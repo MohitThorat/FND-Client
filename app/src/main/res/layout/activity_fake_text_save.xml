@@ -1,9 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
     tools:context=".FakeTextSaveActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id = "@+id/contributeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "@string/contribute"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textSize = "20sp"/>
+
+    <EditText
+        android:id="@+id/editFakeTextSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/contributeTextView"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPersonName|textImeMultiLine"
+        android:hint="@string/enter_fake_text_here" />
+
+    <EditText
+        android:id="@+id/editTextFeedback1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/enter_feedback_1_to_verify_the_fake_news"
+        android:layout_below="@+id/editFakeTextSave" />
+
+    <EditText
+        android:id="@+id/editTextFeedback2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPersonName"
+        android:hint="@string/enter_feedback_2_to_verify_the_fake_news"
+        android:layout_below="@+id/editTextFeedback1" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="saveToDatabase"
+        android:layout_below="@+id/editTextFeedback2"/>
+</RelativeLayout>

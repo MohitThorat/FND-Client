@@ -6,6 +6,9 @@ import retrofit2.http.POST;
 
 public interface FakeTextDetectionApi {
 
+    @POST("faketexts")
+    Call<FakeText> saveFakeText(@Body FakeText fakeText);
+
     @POST("detect")
     Call<FakeText> detectFakeText(@Body FakeText fakeText);
 }

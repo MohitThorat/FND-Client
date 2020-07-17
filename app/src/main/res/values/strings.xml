@@ -4,4 +4,9 @@
     <string name="enter_text_here">Enter text here</string>
     <string name="check">Check</string>
     <string name="result_will_be_shown_here">Result will be shown here.</string>
+    <string name="enter_feedback_1_to_verify_the_fake_news">Enter Feedback 1 to verify the fake news.</string>
+    <string name="enter_feedback_2_to_verify_the_fake_news">Enter Feedback 2 to verify the fake news.</string>
+    <string name="contribute">Contribute to the fake news database!</string>
+    <string name="enter_fake_text_here">Enter Fake Text Here.</string>
+    <string name="save">Save</string>
 </resources>
